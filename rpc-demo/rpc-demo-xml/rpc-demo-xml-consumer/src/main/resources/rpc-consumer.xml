@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+    <application name="rpc-consumer"/>
+
+    <registry address="zookeeper://192.168.1.43:2181"/>
+
+    <reference id="demoService" interface="top.naive_projects.rpc.demo.DemoService"/>
+    <reference id="greetingService" interface="top.naive_projects.rpc.demo.GreetingService"/>
+
+</configuration>

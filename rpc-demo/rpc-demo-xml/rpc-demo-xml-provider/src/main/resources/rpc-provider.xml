@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+    <application name="rpc-provider"/>
+
+    <registry address="zookeeper://192.168.1.43:2181"/>
+
+    <protocol name="http" port="6713"/>
+
+    <bean id="demoService" class="top.naive_projects.rpc.demo.provider.DemoServiceImpl"/>
+    <bean id="greetingService" class="top.naive_projects.rpc.demo.provider.GreetingServiceImpl"/>
+
+    <service interface="top.naive_projects.rpc.demo.DemoService" ref="demoService"/>
+    <service interface="top.naive_projects.rpc.demo.GreetingService" ref="greetingService"/>
+
+</configuration>
